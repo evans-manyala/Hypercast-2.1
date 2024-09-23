@@ -1,0 +1,112 @@
+.detailed-forecast {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: inherit; /* Inherit text color for dark mode */
+}
+
+.table-container {
+  max-height: 400px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Ensure the table is scrollable on small screens */
+}
+
+.detailed-forecast table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  table-layout: auto; /* Allow table to take full width */
+}
+
+.detailed-forecast th,
+.detailed-forecast td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.detailed-forecast th {
+  background-color: #e3f2fd; /* Light blue background for table headers */
+}
+
+.forecast-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+}
+
+.forecast-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 5px; /* Adjusted margin for better spacing on wrap */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forecast-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* New styles for the fade transition */
+.forecast-header {
+  position: sticky; /* Change to sticky for better support */
+  top: 0;
+  width: 100%;
+  background-color: inherit;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .detailed-forecast th,
+  .detailed-forecast td {
+    font-size: 12px; /* Adjust font size for readability on small screens */
+    padding: 5px; /* Adjust padding for better fit */
+  }
+
+  .detailed-forecast {
+    padding: 10px; /* Adjust padding for small screens */
+  }
+
+  .forecast-buttons button {
+    padding: 8px 16px; /* Adjust button padding for small screens */
+    font-size: 14px; /* Adjust font size for buttons */
+  }
+
+  .table-container {
+    max-height: 300px; /* Adjust max-height for small screens */
+  }
+}
+
+body.dark .detailed-forecast {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .detailed-forecast th,
+body.dark .detailed-forecast td {
+  color: #f2f2f2;
+  border-color: #444;
+}
+
+body.dark .detailed-forecast th {
+  background-color: #444;
+}
+
+body.dark .detailed-forecast td {
+  background-color: #3a3a3a;
+}

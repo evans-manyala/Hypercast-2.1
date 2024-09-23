@@ -2,9 +2,9 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import axios from 'axios';
 // Import components
-import SearchBar from './components/SearchBar';
+import SearchBar from './components/SearchBar.js/index.js';
 import LocationInfo from './components/LocationInfo';
-import CurrentWeather from './components/CurrentWeather';
+import CurrentWeather from './components/CurrentWeather.js';
 import SummaryForecast from './components/SummaryForecast';
 import DetailedForecast from './components/DetailedForecast';
 import ErrorDisplay from './components/ErrorDisplay';
@@ -14,7 +14,7 @@ import SplashScreen from './components/SplashScreen';
 import useTheme from './hooks/useTheme';
 import ToggleSwitch from './components/ToggleSwitch';
 import './styles/styles.css';
-import './App.css';
+import './styles/App.css';
 
 const AppContent = () => {
   const [location, setLocation] = useState('');

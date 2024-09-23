@@ -1,0 +1,56 @@
+.summary-forecast {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: inherit; /* Inherit text color for dark mode */
+}
+
+.table-container {
+  overflow-x: auto; /* Ensure the table is scrollable on small screens */
+}
+
+.summary-forecast table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.summary-forecast th,
+.summary-forecast td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .summary-forecast th,
+  .summary-forecast td {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .summary-forecast {
+      padding: 10px;
+  }
+}
+
+body.dark .summary-forecast {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .summary-forecast th,
+body.dark .summary-forecast td {
+  color: #f2f2f2;
+  border-color: #444;
+}
+
+body.dark .summary-forecast th {
+  background-color: #444;
+}
+
+body.dark .summary-forecast td {
+  background-color: #3a3a3a;
+}
