@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import './CurrentWeather.css';
+import '../styles/CurrentWeather.css';
 
 // Function to calculate local time based on timezone offset
 const calculateLocalTime = (timezoneOffset) => {

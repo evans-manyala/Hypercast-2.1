@@ -1,5 +1,5 @@
 import React from 'react';
-import './ThemeToggleSwitch.css';
+import '../styles/ThemeToggleSwitch.css';
 
 const ThemeToggleSwitch = ({ theme, toggleTheme }) => {
   return (

@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import './SummaryForecast.css';
+import '../styles/SummaryForecast.css';
 
 const getDayOfWeek = (dateString) => {
   const date = new Date(dateString);

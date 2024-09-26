@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
-import './DetailedForecast.css';
-import TrendChart from './TrendChart/TrendChart';
+import '../styles/DetailedForecast.css';
+import TrendChart from './TrendChart';
 
 // Function to format date string to time
 const getTime = (dateString) => {
