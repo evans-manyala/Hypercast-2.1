@@ -1,7 +1,7 @@
 // src/components/SplashScreen.js
 import React from 'react';
 import logo from '../assets/logo.png';
-import './SplashScreen.css';
+import '../styles/SplashScreen.css';
 
 const SplashScreen = () => {
   return (

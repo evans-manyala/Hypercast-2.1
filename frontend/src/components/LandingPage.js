@@ -1,6 +1,6 @@
 import React from 'react'; // Import React to use JSX and component functionality
 import { Link } from 'react-router-dom'; // Import Link component for navigation
-import './LandingPage.css'; // Import the CSS file for styling
+import '../styles/LandingPage.css'; // Import the CSS file for styling
 import logo from '../assets/logo.png'; // Import the logo image
 import github from '../assets/github.png'; // Import the GitHub logo image
 import Lightning from '../assets/Lightning.svg'; // Import the Lightning icon
@@ -73,7 +73,7 @@ const DeveloperInfo = () => (
 // CallToAction component to display action buttons for the user
 const CallToAction = () => (
   <div className="landing-actions"> {/* Actions container with a class for styling */}
-    <Link to="/app" className="cta-button">
+    <Link to="/weather" className="cta-button">
       Get Started {/* Button to navigate to the app */}
     </Link>
     <a
